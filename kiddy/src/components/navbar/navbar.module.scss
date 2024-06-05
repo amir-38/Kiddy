@@ -1,0 +1,99 @@
+header {
+  font-family: "DM Sans", sans-serif;
+
+  .dispNone {
+    position: absolute;
+    left: 800px;
+    z-index: 100;
+    img {
+      width: 540px;
+    }
+  }
+  .hero {
+    .heroTxt {
+      padding: 100px 840px 100px 100px;
+      margin-top: 3rem;
+
+      h1 {
+        font-size: 3rem;
+        color: white;
+      }
+      .cursive {
+        font-family: "Indie Flower", cursive;
+        font-weight: 400;
+        font-style: normal;
+        color: red;
+      }
+    }
+  }
+  .topNav {
+    display: flex;
+    justify-content: space-between;
+    .navLogo {
+      font-size: 3rem;
+      color: white;
+      margin: 50px 0px 0px 100px;
+    }
+    .navText {
+      display: flex;
+      margin: 10px;
+      .navAdres {
+        display: flex;
+        flex-direction: row;
+        margin: 50px;
+        font-size: 14px;
+        padding: 0px 30px;
+        .navIcon {
+        }
+      }
+    }
+  }
+  .nav {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 50px 100px;
+    border-radius: 50px;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 101;
+    .list {
+      display: flex;
+      list-style-type: none;
+      li {
+        margin: 5px 10px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    .socialIcons {
+      display: flex;
+      list-style-type: none;
+    }
+  }
+}
+
+.default {
+  background-image: url(../../assets/images/hero_1.jpg.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  background-color: red;
+  .dispNone {
+    display: none;
+  }
+}
+.home {
+  // background-image: url(../../assets/images/kid.webp);
+  background-repeat: no-repeat;
+  background-color: gray;
+  position: relative;
+}
+
+.icon {
+  font-size: 30px;
+}
