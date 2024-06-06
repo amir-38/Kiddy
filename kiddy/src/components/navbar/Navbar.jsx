@@ -8,7 +8,7 @@ import {
   TiSocialTwitter,
 } from "react-icons/ti";
 import { useState, useEffect } from "react";
-import Button from "../button/Button";
+import Button from "../reusibleComponents/button/Button";
 
 export function Navbar() {
   const [style, setStyle] = useState("home");

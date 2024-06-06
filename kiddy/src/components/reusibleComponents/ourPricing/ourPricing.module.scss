@@ -1,0 +1,33 @@
+.OurPricing {
+  background-color: yellow;
+  display: flex;
+  .pricingTxt {
+    color: rgb(43, 42, 42);
+  }
+  .pricing {
+    // border: 3px solid black;
+    .circlePrice {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid green;
+      div {
+        background-color: green;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          color: rgb(192, 27, 27);
+          text-align: center;
+        }
+      }
+    }
+  }
+}

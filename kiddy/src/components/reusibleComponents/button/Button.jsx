@@ -6,7 +6,7 @@ const Button = ({ color, padding, children }) => {
     padding: padding,
     borderRadius: "15px 0px 15px 0px",
     border: "none",
-    fontWeight: "bold",
+    width: "150px",
     cursor: "pointer",
     transition: "background-color 0.3s ease",
     backgroundColor: color.backgroundColor,

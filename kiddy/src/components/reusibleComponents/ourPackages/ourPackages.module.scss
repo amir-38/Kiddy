@@ -1,0 +1,24 @@
+.ourPackages {
+  display: flex;
+  background-color: aqua;
+  .packCard {
+    background-color: white;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 80px;
+      }
+    }
+    .texts {
+      color: red;
+      text-align: center;
+    }
+  }
+}
