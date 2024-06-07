@@ -12,13 +12,95 @@ import Button from "../reusibleComponents/button/Button";
 
 export function Navbar() {
   const [style, setStyle] = useState("home");
+  const [headerText, setHeaderText] = useState("Bring Fun Life To Your Kids");
+  const [backLinks, setBackLinks] = useState([]);
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === "/") {
-      setStyle("home");
-    } else {
-      setStyle("default");
+    switch (location.pathname) {
+      case "/":
+        setStyle("home");
+        setHeaderText("Bring Fun Life To Your Kids");
+        setBackLinks([
+          <Link key="home" to="/">
+            Home
+          </Link>,
+        ]);
+        break;
+      case "/about":
+        setStyle("default");
+        setHeaderText("About Us");
+        setBackLinks([
+          <Link key="home" to="/">
+            Home
+          </Link>,
+          <span key="separator"> / </span>,
+          <Link key="about" to="/about">
+            About
+          </Link>,
+        ]);
+        break;
+      case "/packages":
+        setStyle("default");
+        setHeaderText("Our Packages");
+        setBackLinks([
+          <Link key="home" to="/">
+            Home
+          </Link>,
+          <span key="separator"> / </span>,
+          <Link key="packages" to="/packages">
+            Packages
+          </Link>,
+        ]);
+        break;
+      case "/gallery":
+        setStyle("default");
+        setHeaderText("Gallery");
+        setBackLinks([
+          <Link key="home" to="/">
+            Home
+          </Link>,
+          <span key="separator"> / </span>,
+          <Link key="gallery" to="/gallery">
+            Gallery
+          </Link>,
+        ]);
+        break;
+      case "/pricing":
+        setStyle("default");
+        setHeaderText("Pricing Plans");
+        setBackLinks([
+          <Link key="home" to="/">
+            Home
+          </Link>,
+          <span key="separator"> / </span>,
+          <Link key="pricing" to="/pricing">
+            Pricing
+          </Link>,
+        ]);
+        break;
+      case "/contact":
+        setStyle("default");
+        setHeaderText("Contact Us");
+        setBackLinks([
+          <Link key="home" to="/">
+            Home
+          </Link>,
+          <span key="separator"> / </span>,
+          <Link key="contact" to="/contact">
+            Contact
+          </Link>,
+        ]);
+        break;
+      default:
+        setStyle("default");
+        setHeaderText("Welcome");
+        setBackLinks([
+          <Link key="home" to="/">
+            Home
+          </Link>,
+        ]);
+        break;
     }
   }, [location.pathname]);
 
@@ -34,13 +116,13 @@ export function Navbar() {
         <div className={Styles.navText}>
           <div className={Styles.navAdres}>
             <div className={Styles.navIcon}>
-              <FaLocationDot className={Styles.icon} />
+              <FaLocationDot className={Styles.icon1} />
             </div>
             <p>34 Street Name, City Name Here, United States</p>
           </div>
           <div className={Styles.navAdres}>
             <div className={Styles.navIcon}>
-              <MdAccessTime className={Styles.icon} />
+              <MdAccessTime className={Styles.icon2} />
             </div>
             <p>Sunday - Friday 8:00AM - 4:00PM Saturday CLOSED</p>
           </div>
@@ -69,28 +151,30 @@ export function Navbar() {
         </ul>
         <ul className={Styles.socialIcons}>
           <li>
-            <TiSocialFacebook className={Styles.icon} />
+            <TiSocialFacebook className={Styles.iconF} />
           </li>
           <li>
-            <TiSocialLinkedin className={Styles.icon} />
+            <TiSocialLinkedin className={Styles.iconIn} />
           </li>
           <li>
-            <TiSocialTwitter className={Styles.icon} />
+            <TiSocialTwitter className={Styles.iconT} />
           </li>
         </ul>
       </div>
       <div className={Styles.hero}>
         <div className={Styles.heroTxt}>
           <span className={Styles.cursive}>Welcome To Our Website</span>
-          <h1>Bring Fun Life To Your Kids</h1>
-          <span>Amazing Playground for your kids</span>
+          <h1>{headerText}</h1>
+          <span>{backLinks}</span>
         </div>
-        <Button
-          color={{ backgroundColor: "#007bff", textColor: "#fff" }}
-          padding="20px 20px"
-        >
-          Primary Button
-        </Button>
+        <div className={Styles.btn}>
+          <Button
+            color={{ backgroundColor: "#dc3545", textColor: "#fff" }}
+            padding="26px 26px"
+          >
+            Primary Button
+          </Button>
+        </div>
       </div>
     </header>
   );

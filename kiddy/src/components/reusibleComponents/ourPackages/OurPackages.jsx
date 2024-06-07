@@ -16,8 +16,11 @@ const OurPackages = () => {
           </p>
         </div>
         <Button
-          color={{ backgroundColor: "#007bff", textColor: "#fff" }}
-          padding="20px 20px"
+          color={{
+            backgroundColor: "#007bff",
+            textColor: "#fff",
+          }}
+          padding="10px 10px"
         >
           Primary Button
         </Button>

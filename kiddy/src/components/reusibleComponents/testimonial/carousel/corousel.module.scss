@@ -1,0 +1,24 @@
+.sliders {
+  //   display: flex;
+  //   flex-direction: row;
+  .slider {
+    background-color: green;
+    display: flex !important;
+    flex-direction: row !important;
+    .img {
+      padding: 50px;
+      img {
+        width: 50px;
+        height: 50px;
+        // padding: 20px;
+      }
+    }
+    .text {
+      padding: 20px;
+      color: white;
+    }
+  }
+}
+.slick-dots {
+  bottom: 50px;
+}

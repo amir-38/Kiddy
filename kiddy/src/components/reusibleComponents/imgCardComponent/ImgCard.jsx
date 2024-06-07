@@ -5,8 +5,11 @@ import Styles from "./imgCard.module.scss";
 const Card = ({ imageUrl, name, text }) => {
   return (
     <div className={Styles.card}>
-      <img src={imageUrl} alt={name} className={Styles.cardImage} />
+      <div className={Styles.personImg}>
+        <img src={imageUrl} alt={name} className={Styles.cardImage} />
+      </div>
       <div className={Styles.cardContent}>
+        <p className={Styles.grayText}>Founder</p>
         <h2 className={Styles.cardName}>{name}</h2>
         <p className={Styles.cardText}>{text}</p>
       </div>

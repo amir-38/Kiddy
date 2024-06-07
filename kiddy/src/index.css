@@ -1,4 +1,14 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  /* letter-spacing: 1.2px;  */
+}
+
+.slick-dots {
+  top: 0;
+  left: 300px;
+}
+.slick-dots li {
+  margin: 0;
 }

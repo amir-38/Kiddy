@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Button = ({ color, padding, children }) => {
   const buttonStyle = {
     padding: padding,
-    borderRadius: "15px 0px 15px 0px",
+    borderRadius: "18px 0px 18px 0px",
     border: "none",
     width: "150px",
     cursor: "pointer",

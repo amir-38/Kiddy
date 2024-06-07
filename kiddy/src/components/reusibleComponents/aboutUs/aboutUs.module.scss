@@ -1,9 +1,16 @@
 .aboutUs {
   display: flex;
-  .img {
-    padding: 30px;
-  }
-  .texts {
-    padding: 50px;
+  background-color: #f6f5f5;
+  .cont {
+    display: flex;
+    padding: 100px;
+    .img {
+      img {
+        width: 540px;
+      }
+    }
+    .texts {
+      padding: 90px;
+    }
   }
 }
