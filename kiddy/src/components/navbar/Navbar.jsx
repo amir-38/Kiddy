@@ -170,9 +170,9 @@ export function Navbar() {
         <div className={Styles.btn}>
           <Button
             color={{ backgroundColor: "#dc3545", textColor: "#fff" }}
-            padding="26px 26px"
+            padding="26px 10px"
           >
-            Primary Button
+            LEARN MORE
           </Button>
         </div>
       </div>

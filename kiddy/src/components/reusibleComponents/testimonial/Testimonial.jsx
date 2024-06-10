@@ -13,16 +13,16 @@ const Testimonial = () => {
       </div>
       <div className={Styles.numbers}>
         <p>
-          <span>3423</span>Happy client
+          <div>3423</div>Happy client
         </p>
         <p>
-          <span>4398</span>Members
+          <div>4398</div>Members
         </p>
         <p>
-          <span>50+</span>Staffs
+          <div>50+</div>Staffs
         </p>
         <p>
-          <span>2000+</span>Our followers
+          <div>2000+</div>Our followers
         </p>
       </div>
     </section>

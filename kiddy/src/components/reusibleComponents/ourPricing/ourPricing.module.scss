@@ -1,32 +1,122 @@
 .OurPricing {
   background-color: rgb(255, 255, 255);
   display: flex;
+  margin: 70px 100px;
+  justify-content: space-between;
   .pricingTxt {
     color: rgb(43, 42, 42);
+    h6 {
+      font-size: 1.3rem;
+      font-family: "Indie Flower", cursive;
+      font-weight: 300;
+      color: #fd4d40;
+      padding-bottom: 10px;
+    }
+    h2 {
+      font-size: 36px;
+      font-weight: 300;
+    }
+    p {
+      color: rgb(0, 0, 0, 0.7);
+      line-height: 30px;
+    }
   }
   .pricing {
     // border: 3px solid black;
+
+    h4 {
+      padding: 30px 30px 30px 0px;
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: rgb(0, 0, 0, 0.7);
+    }
+    ul {
+      margin-left: -40px;
+      padding-bottom: 50px;
+
+      li {
+        width: 290px;
+        padding: 10px 0px;
+        list-style-type: none;
+        color: #fd4d40;
+        span {
+          color: rgb(0, 0, 0, 0.7);
+          padding-left: 20px;
+        }
+      }
+    }
     .circlePrice {
       border-radius: 50%;
-      width: 70px;
-      height: 70px;
+      width: 100px;
+      height: 100px;
       background-color: rgb(255, 255, 255);
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 3px solid green;
+      border: 5px solid #fd4d40;
       div {
-        background-color: green;
-        width: 50px;
-        height: 50px;
+        background-color: #fd4d40;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         p {
-          color: rgb(192, 27, 27);
+          color: rgb(0, 0, 0);
           text-align: center;
+          font-size: 34px;
         }
+      }
+    }
+  }
+}
+
+.pricingFirst {
+  margin-right: 50px;
+
+  h4 {
+    padding: 30px 30px 30px 0px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: rgb(0, 0, 0, 0.7);
+  }
+  ul {
+    margin-left: -40px;
+    padding-bottom: 50px;
+    li {
+      width: 290px;
+      padding: 10px 0px;
+
+      list-style-type: none;
+      color: #16c3b0;
+      span {
+        color: rgb(0, 0, 0, 0.7);
+        padding-left: 20px;
+      }
+    }
+  }
+  .circlePrice {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #16c3b0;
+    div {
+      background-color: #16c3b0;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 34px;
       }
     }
   }

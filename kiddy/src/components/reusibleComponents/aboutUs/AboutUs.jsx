@@ -17,8 +17,9 @@ const AboutUs = () => {
             ducimus praesentium! Eius perferendis laudantium esse.
           </p>
           <Button
-            color={{ backgroundColor: "#007bff", textColor: "#fff" }}
-            padding="20px 20px"
+            color={{ backgroundColor: "#ffc107", textColor: "#000" }}
+            padding="24px 24px"
+            width="180px"
           >
             MORE ABOUT US{" "}
           </Button>

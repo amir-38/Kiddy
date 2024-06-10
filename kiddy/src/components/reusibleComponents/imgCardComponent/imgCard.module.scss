@@ -1,9 +1,9 @@
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 340px;
-  max-height: 270px;
-  background-color: gray;
+  width: 370px;
+  height: 220px;
+  background-color: white;
   position: relative;
   .personImg {
     position: absolute;
@@ -23,7 +23,16 @@
     text-align: center;
     padding: 20px;
     .grayText {
-      padding: 30px 0px 0px 0px;
+      padding: 50px 0px 0px 0px;
+      color: rgb(0, 0, 0, 0.3);
+    }
+    .cardName {
+      padding: 10px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .cardText {
+      color: rgb(0, 0, 0, 0.7);
     }
   }
 }

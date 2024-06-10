@@ -20,10 +20,12 @@ const Carousel = () => {
             <img src="../../src/assets/images/person2.webp" alt="" />
           </div>
           <div className={Styles.text}>
-            <p>Name</p>
+            <h5>Name</h5>
+            <h6>Partner</h6>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
-              reiciendis!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+              earum libero rem maxime magnam. Similique esse ab earum, autem
+              consectetur.
             </p>
           </div>
         </div>
@@ -32,10 +34,13 @@ const Carousel = () => {
             <img src="../../src/assets/images/person3.webp" alt="" />
           </div>
           <div className={Styles.text}>
-            <p>Name</p>
+            <h5>Name</h5>
+            <h6>Partner</h6>
+
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
-              reiciendis!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+              earum libero rem maxime magnam. Similique esse ab earum, autem
+              consectetur.
             </p>
           </div>{" "}
         </div>
@@ -44,10 +49,13 @@ const Carousel = () => {
             <img src="../../src/assets/images/person4.webp" alt="" />
           </div>
           <div className={Styles.text}>
-            <p>Name</p>
+            <h5>Name</h5>
+            <h6>Partner</h6>
+
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
-              reiciendis!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+              earum libero rem maxime magnam. Similique esse ab earum, autem
+              consectetur.
             </p>
           </div>{" "}
         </div>

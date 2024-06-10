@@ -1,24 +1,60 @@
 .ourPackages {
   display: flex;
-  background-color: aqua;
-  .packCard {
-    background-color: white;
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .img {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      img {
-        width: 80px;
-      }
-    }
-    .texts {
+  background-color: #17a2b8;
+  justify-content: center;
+  flex-direction: column;
+  padding: 70px 30px;
+  .header {
+    text-align: center;
+    padding: 50px;
+    font-weight: 300;
+    h4 {
       color: red;
-      text-align: center;
+      font-family: "Indie Flower", cursive;
+      font-weight: 300;
+      font-size: 22px;
+    }
+    h2 {
+      padding: 10px;
+      font-weight: 300;
+      font-size: 32px;
+      color: white;
+    }
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .packCard {
+      background-color: white;
+      border-radius: 8px;
+      margin: 15px;
+      width: 350px;
+      height: 440px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        img {
+          width: 80px;
+        }
+      }
+      .texts {
+        color: rgb(0, 0, 0, 0.7);
+        text-align: center;
+        h4 {
+          padding-bottom: 30px;
+        }
+        p {
+          padding: 0px 30px 40px 30px;
+          line-height: 30px;
+        }
+      }
     }
   }
 }

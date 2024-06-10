@@ -1,7 +1,12 @@
 .yellow {
   display: flex;
   justify-content: space-between;
-  padding: 50px 90px;
+  padding: 40px 90px;
   align-items: center;
-  background-color: yellow;
+  background-color: #ffc107;
+  h3 {
+    color: white;
+    font-size: 2.1rem;
+    font-weight: 300;
+  }
 }

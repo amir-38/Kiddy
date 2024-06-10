@@ -6,10 +6,11 @@ const YellowLine = () => {
     <section className={Styles.yellow}>
       <h3>Bring Fun Life To Your Kids</h3>
       <Button
-        color={{ backgroundColor: "#007bff", textColor: "#fff" }}
+        color={{ backgroundColor: "#dc3545", textColor: "#fff" }}
         padding="20px 20px"
+        width="200px"
       >
-        Primary Button
+        GET STARTED
       </Button>
     </section>
   );

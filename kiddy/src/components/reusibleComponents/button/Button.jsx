@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Button = ({ color, padding, children }) => {
+const Button = ({ color, padding, children, width }) => {
   const buttonStyle = {
     padding: padding,
     borderRadius: "18px 0px 18px 0px",
     border: "none",
-    width: "150px",
+    width: width,
+    letterSpacing: "0.2rem",
     cursor: "pointer",
     transition: "background-color 0.3s ease",
     backgroundColor: color.backgroundColor,
@@ -21,6 +22,7 @@ Button.propTypes = {
     backgroundColor: PropTypes.string.isRequired,
     textColor: PropTypes.string.isRequired,
   }),
+  width: PropTypes.string,
   padding: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
@@ -31,6 +33,7 @@ Button.defaultProps = {
     textColor: "#fff",
   },
   padding: "10px 20px",
+  width: "150px",
 };
 
 export default Button;

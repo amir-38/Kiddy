@@ -9,12 +9,12 @@ const OurPricing = () => {
         <h6>Pricing plan</h6>
         <h2>Our pricing</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quis
-          cupiditate fugit, voluptatibus ullam, non laboriosam alias veniam, ex
-          inventore iure sed?
+          Lorem ipsum dolor sit amet, consectetur <br /> adipisicing elit. Nemo
+          quis cupiditate fugit, <br /> voluptatibus ullam, non laboriosam alias
+          veniam, <br /> ex inventore iure sed?
         </p>
       </div>
-      <div className={Styles.pricing}>
+      <div className={Styles.pricingFirst}>
         <div className={Styles.circlePrice}>
           <div>
             <p>$30</p>
@@ -24,22 +24,22 @@ const OurPricing = () => {
         <ul>
           <li>
             <FaCheck />
-            Lorem ipsum dolor sit amet
+            <span>Lorem ipsum dolor sit amet</span>
           </li>
           <li>
             <FaCheck />
-            Nemo quis cupiditate
+            <span>Nemo quis cupiditate</span>
           </li>
           <li>
             <FaCheck />
-            Consectetur adipisicing elit
+            <span>Consectetur adipisicing elit</span>
           </li>
         </ul>
         <Button
-          color={{ backgroundColor: "#007bff", textColor: "#fff" }}
-          padding="20px 20px"
+          color={{ backgroundColor: "#16c3b0", textColor: "#fff" }}
+          padding="14px 14px"
         >
-          buy now{" "}
+          BUY NOW{" "}
         </Button>
       </div>
       <div className={Styles.pricing}>
@@ -52,22 +52,22 @@ const OurPricing = () => {
         <ul>
           <li>
             <FaCheck />
-            Lorem ipsum dolor sit amet
+            <span>Lorem ipsum dolor sit amet</span>
           </li>
           <li>
             <FaCheck />
-            Nemo quis cupiditate
+            <span>Nemo quis cupiditate</span>
           </li>
           <li>
             <FaCheck />
-            Consectetur adipisicing elit
+            <span>Consectetur adipisicing elit</span>
           </li>
         </ul>
         <Button
-          color={{ backgroundColor: "#007bff", textColor: "#fff" }}
-          padding="20px 20px"
+          color={{ backgroundColor: "#fd4d40", textColor: "#fff" }}
+          padding="14px 14px"
         >
-          buy now
+          BUY NOW
         </Button>
       </div>
     </section>
