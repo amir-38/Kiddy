@@ -30,3 +30,39 @@
     }
   }
 }
+@media screen and (max-width: 480px) {
+  .aboutUs {
+    display: flex;
+    background-color: #f6f5f5;
+    .cont {
+      display: flex;
+      padding: 0px;
+      flex-direction: column;
+
+      .img {
+        img {
+          width: 100%;
+        }
+      }
+      .texts {
+        // padding: 90px;
+        h5 {
+          color: #fd4d40;
+          font-family: "Indie Flower", cursive;
+          font-size: 1rem;
+          font-weight: 100px;
+        }
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 300;
+          padding-bottom: 10px;
+        }
+        p {
+          color: rgb(0, 0, 0, 0.7);
+          line-height: 30px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+}

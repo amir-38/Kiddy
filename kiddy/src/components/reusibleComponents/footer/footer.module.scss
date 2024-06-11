@@ -76,3 +76,17 @@
     color: white;
   }
 }
+@media screen and (max-width: 480px) {
+  .top {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    ul {
+      // margin-left: 20px;
+      margin-top: 50px;
+    }
+  }
+}

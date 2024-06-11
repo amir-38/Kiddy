@@ -1,5 +1,6 @@
 header {
   font-family: "DM Sans", sans-serif;
+  width: 100%;
 
   .dispNone {
     position: absolute;
@@ -70,6 +71,7 @@ header {
     justify-content: space-between;
     position: relative;
     z-index: 101;
+    // width: 100%;
     .list {
       display: flex;
       list-style-type: none;
@@ -135,4 +137,22 @@ header {
   text-align: center;
   margin-right: 10px;
   color: #fd4d40;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    width: 100%;
+    .hero {
+      display: none;
+    }
+    .nav {
+      display: none;
+    }
+  }
+  .dispNone {
+    display: none;
+  }
+  .navText {
+    display: none !important;
+  }
 }

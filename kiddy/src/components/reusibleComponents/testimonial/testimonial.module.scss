@@ -47,3 +47,20 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .testimonial {
+    padding: 30px;
+  }
+  .slider {
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 360px;
+    height: 250px;
+    display: none;
+  }
+  .numbers {
+    flex-direction: column;
+  }
+}
