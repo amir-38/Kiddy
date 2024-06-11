@@ -58,3 +58,11 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .cards {
+    flex-direction: column !important;
+    padding: 0px;
+    align-items: center;
+  }
+}

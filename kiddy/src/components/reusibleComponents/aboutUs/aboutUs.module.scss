@@ -36,7 +36,7 @@
     background-color: #f6f5f5;
     .cont {
       display: flex;
-      padding: 0px;
+      padding: 30px;
       flex-direction: column;
 
       .img {
@@ -45,7 +45,7 @@
         }
       }
       .texts {
-        // padding: 90px;
+        padding: 0px;
         h5 {
           color: #fd4d40;
           font-family: "Indie Flower", cursive;

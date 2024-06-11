@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import Styles from "./navbar.module.scss";
 import { MdAccessTime } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import { FaBars, FaTimes } from "react-icons/fa";
 import {
   TiSocialFacebook,
   TiSocialLinkedin,
@@ -16,6 +17,11 @@ export function Navbar() {
   const [backLinks, setBackLinks] = useState([]);
   const location = useLocation();
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   useEffect(() => {
     switch (location.pathname) {
       case "/":
@@ -106,6 +112,42 @@ export function Navbar() {
 
   return (
     <header className={Styles[style]}>
+      <ul
+        className={`${Styles.mobile} ${
+          isOpen ? Styles.showMenu : Styles.hideMenu
+        }`}
+      >
+        <li>
+          <Link to="/" onClick={toggleMenu}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/about" onClick={toggleMenu}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="/packages" onClick={toggleMenu}>
+            Packages
+          </Link>
+        </li>
+        <li>
+          <Link to="/gallery" onClick={toggleMenu}>
+            Gallery
+          </Link>
+        </li>
+        <li>
+          <Link to="/pricing" onClick={toggleMenu}>
+            Pricing
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" onClick={toggleMenu}>
+            Contact
+          </Link>
+        </li>
+      </ul>
       <div className={Styles.dispNone}>
         <img src="../../src/assets/images/kid.webp" alt="kid" />
       </div>
@@ -149,6 +191,10 @@ export function Navbar() {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
+        <div className={Styles.burgerIcon} onClick={toggleMenu}>
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </div>
+
         <ul className={Styles.socialIcons}>
           <li>
             <TiSocialFacebook className={Styles.iconF} />
