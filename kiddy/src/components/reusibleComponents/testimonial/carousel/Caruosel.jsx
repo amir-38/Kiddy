@@ -14,7 +14,7 @@ const Carousel = () => {
   };
   return (
     <div className={Styles.sliders}>
-      <Slider {...settings}>
+      <Slider className={Styles.carousel} {...settings}>
         <div className={Styles.slider}>
           <div className={Styles.img}>
             <img src="../../src/assets/images/person2.webp" alt="" />

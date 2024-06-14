@@ -10,7 +10,7 @@
       }
     }
     .texts {
-      padding: 90px;
+      padding: 80px;
       h5 {
         color: #fd4d40;
         font-family: "Indie Flower", cursive;
@@ -21,6 +21,7 @@
         font-size: 1.7rem;
         font-weight: 300;
         padding-bottom: 10px;
+        text-align: left;
       }
       p {
         color: rgb(0, 0, 0, 0.7);
@@ -30,7 +31,7 @@
     }
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   .aboutUs {
     display: flex;
     background-color: #f6f5f5;

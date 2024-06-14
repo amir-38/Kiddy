@@ -29,7 +29,7 @@ export function Navbar() {
         setHeaderText("Bring Fun Life To Your Kids");
         setBackLinks([
           <Link key="home" to="/">
-            Home
+            Amazing Playground for your kids{" "}
           </Link>,
         ]);
         break;
@@ -211,7 +211,7 @@ export function Navbar() {
         <div className={Styles.heroTxt}>
           <span className={Styles.cursive}>Welcome To Our Website</span>
           <h1>{headerText}</h1>
-          <span>{backLinks}</span>
+          <span className={Styles.span}>{backLinks}</span>
         </div>
         <div className={Styles.btn}>
           <Button

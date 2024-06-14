@@ -18,7 +18,7 @@ const AboutUs = () => {
           </p>
           <Button
             color={{ backgroundColor: "#ffc107", textColor: "#000" }}
-            padding="24px 24px"
+            padding="24px 4px"
             width="180px"
           >
             MORE ABOUT US{" "}

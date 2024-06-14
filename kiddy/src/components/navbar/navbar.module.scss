@@ -6,7 +6,13 @@ header {
     .heroTxt {
       padding: 100px 840px 0px 100px;
       margin-top: 3rem;
-
+      .span {
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.2rem;
+        }
+      }
       h1 {
         font-size: 3rem;
         color: white;
@@ -19,7 +25,7 @@ header {
       }
     }
     .btn {
-      margin: 80px 0px 0px 100px;
+      margin: 50px 0px 0px 100px;
       padding-bottom: 110px;
     }
   }
@@ -131,7 +137,7 @@ header {
   color: #fd4d40;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   header {
     width: 100%;
     .hero {
@@ -203,16 +209,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .burgerIcon {
-    display: none;
-  }
-  .mobile {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 901px) {
   .dispNone {
     position: absolute;
     left: 800px;
@@ -220,5 +217,12 @@ header {
     img {
       width: 540px;
     }
+  }
+  .burgerIcon {
+    padding: 20px;
+    display: none;
+  }
+  .mobile {
+    display: none;
   }
 }

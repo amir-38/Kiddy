@@ -6,14 +6,16 @@ const Contact = () => {
   return (
     <>
       <main>
-        <h3>Get In Touch Using The Contact Form</h3>
-        <p>
+        <h3 className={Styles.contHeader}>
+          Get In Touch Using The Contact Form
+        </h3>
+        <h6 className={Styles.contHeaderTxt}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
           assumenda, dolorum necessitatibus eius earum voluptates sed!
-        </p>{" "}
+        </h6>{" "}
         {/* <section className={Styles.contact}> */}
         <div className={Styles.formCont}>
-          <form action="">
+          <form className={Styles.Form} action="">
             <div>
               <label htmlFor="name">First name</label>
               <input type="text" id="name" name="name" />
@@ -38,14 +40,15 @@ const Contact = () => {
           <div className={Styles.info}>
             <h3>Contact Info</h3>
             <p>
-              Address:{" "}
-              <span> 34 Street Name, City Name Here, United States</span>
+              <span>Address:</span>
+              34 Street Name, City Name Here, United States
             </p>
             <p>
-              Phone: <span>+1 242 4942 290</span>
+              <span>Phone:</span>+1 242 4942 290
             </p>
             <p>
-              Email: <span>info@yourdomain.com</span>
+              <span>Email:</span>
+              info@yourdomain.com
             </p>
           </div>
         </div>
